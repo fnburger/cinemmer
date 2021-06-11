@@ -3,14 +3,95 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>l_file_reg</title>
+        <title>l_start</title>
         <link rel="stylesheet" href="layout.css" type="text/css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="jquery.typeText.js"></script>
+        <script language="javascript" type="text/javascript">
+          $(document).ready(setInvis);
+          $(typewriter);
+
+          function typewriter(){
+            $(".print").typeText({
+              typeSpeed: 20,
+              lineWait: 100,
+              then:function() {
+                  $(setShow);
+              }
+            });
+          }
+
+        function setInvis(){
+          $('#t1').hide();
+        }
+
+        function setShow(){
+          $('#t1').show();
+        }
+        </script>
+
     </head>
     <body>
+
         <div id="container">
 
+          <div class="print">
+          <p>starting...</p>
+          <p>PRJKTRD 0108 (v3 12148) FINISHED</p>
+          <p>PRJKTRD 2013 (TRAILER) CRASHED</p>
+          <p>PRJKTRD 0012 (NCTIERVRCRV) CLOSED</p>
+          </div>
+          <br>
 
+          <table id="t1">
+            <tr>
+              <th>NAME</th>
+              <th>SHR</th>
+              <th>%CPU</th>
+              <th>TIME</th>
+              <th>%MEM</th>
+              <th>PID</th>
+            </tr>
+            <tr id="hov" class="clickable-row" data-href="/confirm">
+              <td>arch_bullets</td>
+              <td>0</td>
+              <td>2.5</td>
+              <td>4s</td>
+              <td>6</td>
+              <td>9</td>
+            </tr>
+            <tr id="hov" class="clickable-row" data-href="/data.html">
+              <td>e3_trailer</td>
+              <td>0</td>
+              <td>3.9</td>
+              <td>1s</td>
+              <td>23</td>
+              <td>8</td>
+            </tr>
+            <tr id="hov" class="clickable-row" data-href="/preload.html">
+              <td>gk_VIP</td>
+              <td>0</td>
+              <td>1.5</td>
+              <td>8s</td>
+              <td>27</td>
+              <td>7</td>
+            </tr>
+            <tr id="hov" class="clickable-row" data-href="/register.html">
+              <td>final_newfinal_l_v3</td>
+              <td>0</td>
+              <td>9.5</td>
+              <td>4s</td>
+              <td>44</td>
+              <td>6</td>
+            </tr>
+          </table>
 
         </div>
     </body>
+      <script language="javascript" type="text/javascript">
+        $(".clickable-row").click(function(){
+          window.location = $(this).data("href");
+        });
+      </script>
 </html>
