@@ -1,0 +1,51 @@
+@import url('/meinerschrift.otf');
+
+@font-face { font-family: 'meine-schrift';
+             src: url('meinerschrift.otf') format('truetype'); }
+
+body{
+  background-color: #180c0f;
+}
+
+#container {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+p{
+  letter-spacing: 1px;
+  font-family: meine-schrift;
+  font-size: 18px;
+  color: #e5003b;
+}
+
+table#t1{
+  width: 100%;
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  font-family: meine-schrift;
+  font-size: 18px;
+  color: #e5003b;
+}
+
+table#t1 tr{
+  line-height: 20px;
+}
+
+table#t1 td{
+  height: 20px;
+  text-align: left;
+  padding: 5px;
+}
+
+table#t1 th{
+  height: 40px;
+  text-align: justify;
+  padding: 5px;
+}
+
+table#t1 tr#hov:hover{
+  background-color: #820011;
+  color: white;
+}
