@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CNM PHOTO</title>
+        <link rel="stylesheet" href="cyberlayout.css" type="text/css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="jquery.typeText.js"></script>
+    </head>
+    <body>
+        <div id="container">
+          <h3>Photography</h3>
+
+          <div id="info">
+            <p>Check out my <a href="https://www.instagram.com/cinemmer" target="_blank" style="color: #e5003b;">Instagram</a></p>
+            <p>The following are a few selected pictures. Please visit my Instagram page to see more.</p>
+          </div>
+          <div id="maintext">
+            <ul>
+              <li class="clickable-char">Ghost in the Shell</li><div class="content" contenteditable="true"><p id="0" class="fill">Lorem ipsum...</p></div>
+              <li class="clickable-char">Blade Runner</li><div class="content" contenteditable="true"><p id="1" class="fill">Lorem ipsum2...</p></div>
+              <li class="clickable-char">Alita: Battle Angel</li><div class="content" contenteditable="true"><p id="2" class="fill">Lorem ipsum2...</p></div>
+              <li class="clickable-char">Cyberpunk 2077</li><div class="content" contenteditable="true"><p id="3" class="fill">Lorem ipsum2...</p></div>
+              <li class="clickable-char">Ergo Proxy</li><div class="content" contenteditable="true"><p id="4" class="fill">Lorem ipsum2...</p></div>
+              <li class="clickable-char">Psycho-Pass</li><div class="content" contenteditable="true"><p id="5" class="fill">Lorem ipsum2...</p></div>
+            </ul>
+          </div>
+          <br>
+          <footer>
+            <a class="backbutton" href="index.html">&#8592;&nbsp;back</a>
+          </footer>
+
+
+        </div>
+        <iframe id="frmFile" src="photography_data.txt" style="display: none;"></iframe>
+    </body>
+    <script language="javascript" type="text/javascript">
+
+      var listofparagraphs = $('.content');
+      /*Click event for clickable agent names */
+      $(".clickable-char").click(function(){
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        /*Set text for each div*/
+        var oFrame = document.getElementById("frmFile");
+        var strRawContents = oFrame.contentWindow.document.body.childNodes[0].innerHTML;
+        while (strRawContents.indexOf("\r") >= 0)
+          strRawContents = strRawContents.replace("\r", "");
+        var arrLines = strRawContents.split("@");
+        for (var i = 0; i < arrLines.length; i++) {
+          var curLine = arrLines[i];
+          listofparagraphs[i].innerHTML = curLine;
+        }
+        /*Make div visible/hidden */
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    </script>
+</html>
