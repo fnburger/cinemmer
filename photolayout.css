@@ -1,0 +1,126 @@
+@import url('/meinerschrift.otf');
+
+@font-face { font-family: 'meine-schrift';
+             src: url('meinerschrift.otf') format('truetype'); }
+
+body{
+  background-color: #180c0f;
+  background: url(noise50.jpg);
+  animation: animate .5s steps(10) infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    background-position: 0 0;
+  }
+  100%
+  {
+    background-position: 100% 100%;
+  }
+}
+
+#container {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+p{
+  letter-spacing: 1px;
+  font-family: meine-schrift;
+  font-size: 18px;
+  color: #e5003b;
+}
+
+h3{
+  letter-spacing: 1px;
+  font-family: meine-schrift;
+  font-size: 19px;
+  color: #e5003b;
+  text-align: left;
+}
+
+ul{
+  letter-spacing: 1px;
+  font-family: meine-schrift;
+  font-size: 18px;
+  color: #e5003b;
+  list-style-type: lower-alpha;
+  text-align: left;
+}
+
+li:hover{
+  background-color: #820011;
+  color: white;
+}
+
+table#t1{
+  width: 100%;
+  border-collapse: collapse;
+  letter-spacing: 1px;
+  font-family: meine-schrift;
+  font-size: 18px;
+  color: #e5003b;
+}
+
+table#t1 tr{
+  line-height: 20px;
+}
+
+table#t1 td{
+  height: 20px;
+  text-align: left;
+  padding: 5px;
+}
+
+table#t1 th{
+  height: 40px;
+  text-align: justify;
+  padding: 5px;
+}
+
+table#t1 tr#hov:hover{
+  background-color: #820011;
+  color: white;
+}
+
+.backbutton {
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  letter-spacing: 1px;
+  font-family: meine-schrift;
+  font-size: 19px;
+  color: #e5003b;
+  text-align: left;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #180c0f;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  background-color: #260603;
+  opacity: 90%;
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+
+}
