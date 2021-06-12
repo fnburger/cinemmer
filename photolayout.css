@@ -20,17 +20,44 @@ body{
 }
 
 #container {
-    width: 500px;
+    width: auto;
     margin: 0 auto;
     position: relative;
 }
 
 #maintext{
-  width: 65%;
+  width: auto;
+  margin: auto;
   padding: 20px;
   border-radius: 10px;
   background: url(noise50.jpg);
   animation: animate .4s steps(5) infinite;
+}
+
+div.gallery{
+  margin: 20px;
+  border: 1px solid black;
+  float: left;
+  width: 320px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+img{
+  width: auto;
+  margin: auto;
+}
+
+footer{
+  position: absolute;
+  bottom: 0;
 }
 
 p{
@@ -38,6 +65,7 @@ p{
   font-family: meine-schrift;
   font-size: 23px;
   color: #7dff64;
+  text-align: center;
 }
 
 strong{
@@ -56,9 +84,9 @@ details summary::-webkit-details-marker {
 h3{
   letter-spacing: 1px;
   font-family: meine-schrift;
-  font-size: 30px;
+  font-size: 40px;
   color: #7dff64;
-  text-align: left;
+  text-align: center;
 }
 
 ul{
@@ -106,15 +134,16 @@ table#t1 tr#hov:hover{
 }
 
 .backbutton {
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+  display: block;
   letter-spacing: 1px;
   font-family: meine-schrift;
   font-size: 19px;
   color: #7dff64;
-  text-align: left;
 }
 
 /* Style the button that is used to open and close the collapsible content */

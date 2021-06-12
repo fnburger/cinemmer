@@ -4,7 +4,7 @@
              src: url('meinerschrift.otf') format('truetype'); }
 
 body{
-  background-color: #2F3941;
+  background-color: #180c0f;
 }
 
 #container {
@@ -13,58 +13,11 @@ body{
     position: relative;
 }
 
-#c_left {
-  width: 250px;
-  height: 250px;
-  float: left;
-  background-color: #407BB2;
-  text-align: center;
-}
-
-#c_left:hover{
-  background-color: #3B4A65;
-}
-
-#c_left p{
-  margin-top: 110px;
-  font-size: 30px;
-}
-
-#c_right {
-  width: 250px;
-  height: 250px;
-  float: right;
-  background-color: #44A2D2;
-  text-align: center;
-}
-
-#c_right:hover{
-  background-color: #445E8E;
-}
-
-#c_right p{
-  margin-top: 110px;
-  font-size: 30px;
-}
-
-#foot{
-  width: 500px;
-}
-
-h1{
-  cursor: pointer;
-  letter-spacing: 1px;
-  font-family: meine-schrift;
-  font-size: 35px;
-  color: #44A2D2;
-  text-align: center;
-}
-
 p{
   letter-spacing: 1px;
   font-family: meine-schrift;
   font-size: 18px;
-  color: white;
+  color: #e5003b;
 }
 
 table#t1{
@@ -105,6 +58,6 @@ table#t1 tr#hov:hover{
   letter-spacing: 1px;
   font-family: meine-schrift;
   font-size: 19px;
-  color: #44A2D2;
+  color: #e5003b;
   text-align: left;
 }

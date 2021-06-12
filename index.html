@@ -9,93 +9,26 @@
         <script src="//code.jquery.com/jquery.min.js"></script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
         <script src="jquery.typeText.js"></script>
-        <script language="javascript" type="text/javascript">
-          $(document).ready(setInvis);
-          $(typewriter);
-
-          function typewriter(){
-            $(".print").typeText({
-              typeSpeed: 10,
-              lineWait: 80,
-              then:function() {
-                  $(setShow);
-              }
-            });
-          }
-
-        function setInvis(){
-          $('#t1').hide();
-          $('#waiting').hide();
-        }
-
-        function setShow(){
-          $('#t1').show();
-          $('#waiting').show();
-        }
-        </script>
-
     </head>
     <body>
-
         <div id="container">
-
-          <div class="print">
-          <p>starting...</p>
-          <p>PRJKTCNMR 0321 (v1 12621) LOADED</p>
-          <p>PRJKTCNMR 2020v1 (GAME) LOADED</p>
-          <p>PRJKTCNMR 2020v2 (GAME) LOADED</p>
-          <p>PRJKTCNMR 2021 (GAME) LOADING...</p>
+          <h1><span style="color: white; font-size: 50px;">Cine</span>matic Progra<span style="color: white; font-size: 50px;">mmer</span></h1>
+          <div id="c_left" class="clickable-element" data-href="photography.html">
+              <p>photo</p>
           </div>
-          <br>
-
-          <table id="t1">
-            <tr>
-              <th>NAME</th>
-              <th>SHR</th>
-              <th>%CPU</th>
-              <th>TIME</th>
-              <th>%MEM</th>
-              <th>PID</th>
-            </tr>
-            <tr id="hov" class="clickable-row" data-href="/runner.html">
-              <td>&rArr; Automaton.exe</td>
-              <td>0</td>
-              <td>2.5</td>
-              <td>4s</td>
-              <td>6</td>
-              <td>9</td>
-            </tr>
-            <tr id="hov" class="clickable-row" data-href="/dragon.html">
-              <td>&rArr; Soul.exe</td>
-              <td>0</td>
-              <td>3.9</td>
-              <td>1s</td>
-              <td>23</td>
-              <td>8</td>
-            </tr>
-            <tr id="hov" class="clickable-row" data-href="/untitled.html">
-              <td>???</td>
-              <td>0</td>
-              <td>1.5</td>
-              <td>8s</td>
-              <td>27</td>
-              <td>7</td>
-            </tr>
-            <tr id="hov" class="clickable-row" data-href="/photography.html">
-              <td>&rArr; Photography</td>
-              <td>0</td>
-              <td>9.5</td>
-              <td>4s</td>
-              <td>44</td>
-              <td>6</td>
-            </tr>
-          </table>
-          <br>
-          <p id="waiting">Waiting for user input...</p>
+          <div id="c_right" class="clickable-element" data-href="games.html">
+              <p>games</p>
+          </div>
+          <div id="c_right" class="clickable-element" data-href="about.html" style="background-color: #407BB2;">
+              <p>about</p>
+          </div>
+          <div id="foot">
+              <p>&copy;cinemmer</p>
+          </div>
         </div>
     </body>
       <script language="javascript" type="text/javascript">
-        $(".clickable-row").click(function(){
+        $(".clickable-element").click(function(){
           window.location = $(this).data("href");
         });
       </script>

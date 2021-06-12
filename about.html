@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CNMR</title>
+        <link rel="icon" href="favicon.png">
+        <link rel="stylesheet" href="layout.css" type="text/css">
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="jquery.typeText.js"></script>
+    </head>
+    <body>
+        <div id="container">
+          <h1 class="clickable-element" data-href="/index.html"><span style="color: white; font-size: 50px;">Cine</span>matic Progra<span style="color: white; font-size: 50px;">mmer</span></h1>
+          <p>Personal data: Male, 23</p>
+          <p>Study: Computer Science</p>
+          <p>Location: Austria, Vienna</p>
+          <p>Interests: Games, Cinematics, Science & Technology, Photography</p>
+          <p>Languages: German (native), English (fluent), Latin (Intermediate), Japanese (Intermediate), Italian (Intermediate)</p>
+          <p>Other skills: Unreal Engine 4, JAVA, CSS, HTML, JavaScript, PHP5, Video production, Writing & Translation</p>
+          <a href="https://www.instagram.com/cinemmer" target="_blank" style="color: #44A2D2; text-decoration: none;">📸 Instagram</a><br>
+          <br><br>
+          <a class="backbutton" href="index.html">&#8592;&nbsp;back</a>
+        </div>
+    </body>
+      <script language="javascript" type="text/javascript">
+        $(".clickable-element").click(function(){
+          window.location = $(this).data("href");
+        });
+      </script>
+</html>
