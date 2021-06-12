@@ -4,9 +4,8 @@
              src: url('meinerschrift.otf') format('truetype'); }
 
 body{
-  background-color: #180c0f;
-  background: url(noise50.jpg);
-  animation: animate .5s steps(10) infinite;
+  background-color: #090c06;
+
 }
 @keyframes animate
 {
@@ -26,18 +25,39 @@ body{
     position: relative;
 }
 
+#maintext{
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  background: url(noise50.jpg);
+  animation: animate .4s steps(5) infinite;
+}
+
 p{
   letter-spacing: 1px;
   font-family: meine-schrift;
   font-size: 18px;
-  color: #e5003b;
+  color: #7dff64;
+}
+
+strong{
+  letter-spacing: 1px;
+  font-family: meine-schrift;
+  font-size: 19px;
+  color: #7dff64;
+}
+
+details summary::-webkit-details-marker {
+  background: #180c0f;
+  color: #fff;
+  font-size: 100%;
 }
 
 h3{
   letter-spacing: 1px;
   font-family: meine-schrift;
   font-size: 19px;
-  color: #e5003b;
+  color: #7dff64;
   text-align: left;
 }
 
@@ -45,13 +65,13 @@ ul{
   letter-spacing: 1px;
   font-family: meine-schrift;
   font-size: 18px;
-  color: #e5003b;
+  color: #7dff64;
   list-style-type: lower-alpha;
   text-align: left;
 }
 
 li:hover{
-  background-color: #820011;
+  background-color: #090c06;
   color: white;
 }
 
@@ -61,7 +81,7 @@ table#t1{
   letter-spacing: 1px;
   font-family: meine-schrift;
   font-size: 18px;
-  color: #e5003b;
+  color: #7dff64;
 }
 
 table#t1 tr{
@@ -81,7 +101,7 @@ table#t1 th{
 }
 
 table#t1 tr#hov:hover{
-  background-color: #820011;
+  background-color: #090c06;
   color: white;
 }
 
@@ -93,13 +113,13 @@ table#t1 tr#hov:hover{
   letter-spacing: 1px;
   font-family: meine-schrift;
   font-size: 19px;
-  color: #e5003b;
+  color: #7dff64;
   text-align: left;
 }
 
 /* Style the button that is used to open and close the collapsible content */
 .collapsible {
-  background-color: #eee;
+  background-color: #090c06;
   color: #444;
   cursor: pointer;
   padding: 18px;
@@ -112,12 +132,12 @@ table#t1 tr#hov:hover{
 
 /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
 .active, .collapsible:hover {
-  background-color: #180c0f;
+  background-color: #090c06;
 }
 
 /* Style the collapsible content. Note: hidden by default */
 .content {
-  background-color: #260603;
+  background-color: #1b1b11;
   opacity: 90%;
   padding: 0 18px;
   display: none;
