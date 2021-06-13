@@ -18,10 +18,11 @@ p{
   font-family: meine-schrift;
   font-size: 18px;
   color: #e5003b;
+  padding-left: 10px;
 }
 
 table#t1{
-  width: 100%;
+  width: 80%;
   border-collapse: collapse;
   letter-spacing: 1px;
   font-family: meine-schrift;
