@@ -26,18 +26,33 @@ html{
   background-repeat: no-repeat;
 }
 
+.spacer{
+  margin: auto;
+  width: 50%;
+  background-color: #44A2D2;
+  border-radius: 1000px;
+}
+
 #lower{
   text-align: center;
-  padding: 100px;
+  position: relative;
+  margin-top: 500px;
+  background-color: white;
+  height: 1000px;
 }
 
 #lower h3{
   font-size: 40px;
   color: white;
+  padding-top: 100px;
 }
 
 #lower p{
   font-size: 28px;
+}
+
+#lower a{
+  color:inherit;
 }
 
    #container {
@@ -62,12 +77,14 @@ html{
       float: left;
       width: 50%;
       text-align: center;
+      background-color: #012840;
       /*background-color: #407BB2;*/
-      background-color: rgba(0, 70, 173, 0.5);
+      padding: 0px;
+      /*background-color: rgba(0, 70, 173, 0.5);
       -webkit-backdrop-filter: blur(4px);
       -o-backdrop-filter: blur(4px);
       -moz-backdrop-filter: blur(4px);
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);*/
     }
 
     #c_left:hover{
@@ -82,17 +99,19 @@ html{
     #c_right {
       float: right;
       width: 50%;
+      background-color: #012840;
       /*background-color: #44A2D2;*/
       text-align: center;
-      background-color: rgba(0, 200, 255, 0.5);
+      padding: 0px;
+      /*backgroud-color: rgba(0, 200, 255, 0.5);
       -webkit-backdrop-filter: blur(4px);
       -o-backdrop-filter: blur(4px);
       -moz-backdrop-filter: blur(4px);
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(4px);*/
     }
 
     #c_right:hover{
-      background-color: #445E8E;
+      background-color: #3B4A65;
     }
 
     #c_right p{
@@ -111,6 +130,10 @@ html{
       background-size:cover;
       background-attachment: scroll;
   }
+
+.spacer{
+  background-color: transparent;
+}
 
   #lower{
     width: 0%;
