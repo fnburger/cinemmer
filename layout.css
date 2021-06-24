@@ -217,9 +217,18 @@ h1{
   cursor: pointer;
   letter-spacing: 3px;
   font-family: meine-schrift;
-  font-size: 70px;
+  font-size: 90px;
   color: #44A2D2;
   text-align: center;
+}
+
+h2{
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 3px;
+  font-family: meine-schrift;
+  font-size: 20px;
+  color: #44A2D2;
 }
 
 p{
