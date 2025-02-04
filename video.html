@@ -37,28 +37,29 @@ img {margin-bottom: -7px}
 <div class="w3-clear"></div>
 <header class="w3-center w3-margin-bottom">
   <h1><b>CINEMMER</b></h1>
-  <p><b>Photography, Videography, Software & Webdesign</b></p>
+  <p><b>Videography</b></p>
 </header>
 </div><br>
 
-  <div class="w3-row w3-row-padding" id="myGrid" style="margin-bottom:128px; text-align: center;">
-
-    <div class="w3-half">
-    <a href="street.html"><h3 class="w3-button w3-text-grey w3-hover-black">> Streetphotography <</h3></a>
-    <img src="img/img48.jpg" style="width:100%">
-    <img src="img/img29.jpg" style="width:100%">
-    <img src="img/img30.jpg" style="width:100%">
+<div class="w3-container w3-padding-64 w3-center">
+    <h2>Beyond the Decision</h2>
+    <p>A three minute student short film depicting the process of decision making and internal struggle.</p>
+    <div style="position: relative; width: 100%; padding-bottom: 42.85%; overflow: hidden;">
+        <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
+        src="https://www.youtube.com/embed/DdYF9TRZhyU?autoplay=1&mute=1">
+        allow="autoplay; fullscreen"
+        </iframe>
     </div>
 
-    <div class="w3-half">
-    <a href="other.html"><h3 class="w3-button w3-text-grey w3-hover-black">> Landscapes & more <</h3></a>
-    <img src="img/img31.jpg" style="width:100%">
-    <img src="img/img33.jpg" style="width:100%">
-    <img src="img/img47.jpg" style="width:100%">
-    
+    <button onclick="toggleDescription()" class="w3-button w3-light-gray w3-margin-top" style="margin-bottom: 20px;">Description</button>
+    <div id="description" style="display: none; max-width: 900px; margin: auto; padding: 16px;" class="w3-padding w3-light-grey w3-round">
+        <p>
+            Tom, a risk-averse software developer, 
+            has a dream about his past where he faces a pivotal choice between taking a safe promotion at his corporate job or pursuing his uncertain start-up dream, 
+            only to realize that the true value lies not in immediate success but in taking the leap despite his fear of failure.
+        </p>
     </div>
-
-  </div>
+</div>
 
 
 <!-- End Page Content -->
@@ -66,36 +67,40 @@ img {margin-bottom: -7px}
 
 <!-- Footer -->
 <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge" style="margin-top:128px">
-  <p>All photos were taken by cinemmer</p>
-  <!-- <i class="fa fa-facebook-official w3-hover-opacity"></i> -->
+  <p>Footage taken by cinemmer</p>
   <a href="https://www.instagram.com/cinemmer" target="_blank"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
-  <!-- <i class="fa fa-snapchat w3-hover-opacity"></i> -->
-  <!-- <i class="fa fa-pinterest-p w3-hover-opacity"></i> -->
   <a style="text-decoration: none;" href="https://twitter.com/cinemmer" target="_blank"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
-  <!-- <i class="fa fa-linkedin w3-hover-opacity"></i> -->
-  <!-- <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p> -->
 </footer>
 
 <script>
-// Toggle grid padding
-function myFunction() {
-  var x = document.getElementById("myGrid");
-  if (x.className === "w3-row") {
-    x.className = "w3-row-padding";
-  } else {
-    x.className = x.className.replace("w3-row-padding", "w3-row");
-  }
-}
+    function toggleDescription() {
+        var desc = document.getElementById("description");
+        if (desc.style.display === "none") {
+            desc.style.display = "block";
+        } else {
+            desc.style.display = "none";
+        }
+    }
 
-// Open and close sidebar
-function w3_open() {
-  document.getElementById("mySidebar").style.width = "100%";
-  document.getElementById("mySidebar").style.display = "block";
-}
+    // Toggle grid padding
+    function myFunction() {
+    var x = document.getElementById("myGrid");
+    if (x.className === "w3-row") {
+        x.className = "w3-row-padding";
+    } else {
+        x.className = x.className.replace("w3-row-padding", "w3-row");
+    }
+    }
 
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
+    // Open and close sidebar
+    function w3_open() {
+    document.getElementById("mySidebar").style.width = "100%";
+    document.getElementById("mySidebar").style.display = "block";
+    }
+
+    function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    }
 </script>
 
 </body>
