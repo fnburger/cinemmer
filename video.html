@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
-<title>CINEMMER</title>
+<title>CINEMMER - Webdesign, Photo & Video</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Cinematic Photography in Vienna, Austria. Visit @cinemmer on Instagram or take a look here.">
+<meta name="description" content="Photography, Videography and Webdesign in Vienna, Austria - @cinemmer on Instagram">
 <link rel="stylesheet" href="layout.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -21,8 +21,8 @@ img {margin-bottom: -7px}
     <i class="fa fa-remove"></i>
   </a>
   <div class="w3-bar-block w3-center">
-    <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
     <a href="video.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Video</a>
+    <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photo</a>
     <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
   </div>
@@ -42,22 +42,20 @@ img {margin-bottom: -7px}
 </div><br>
 
 <div class="w3-container w3-padding-64 w3-center">
-    <h2>Beyond the Decision</h2>
-    <p>A three minute student short film depicting the process of decision making and internal struggle.</p>
-    <div style="position: relative; width: 100%; padding-bottom: 42.85%; overflow: hidden;">
+    <div id="description" style="max-width: 1400px; margin: auto; padding: 16px;" class="w3-padding w3-light-grey w3-round">
+      <h2>Beyond the Decision</h2>
+      <p>A three minute student short film depicting the process of decision making and internal struggle.</p>
+      <p>
+          Tom, a risk-averse software developer, 
+          has a dream about his past where he faces a pivotal choice between taking a safe promotion at his corporate job or pursuing his uncertain start-up dream, 
+          only to realize that the true value lies not in immediate success but in taking the leap despite his fear of failure.
+      </p>
+      <div style="position: relative; width: 100%; padding-bottom: 42.85%; overflow: hidden; margin-top: 20px;">
         <iframe style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;"
         src="https://www.youtube.com/embed/DdYF9TRZhyU?autoplay=1&mute=1">
         allow="autoplay; fullscreen"
         </iframe>
     </div>
-
-    <button onclick="toggleDescription()" class="w3-button w3-light-gray w3-margin-top" style="margin-bottom: 20px;">Description</button>
-    <div id="description" style="display: none; max-width: 900px; margin: auto; padding: 16px;" class="w3-padding w3-light-grey w3-round">
-        <p>
-            Tom, a risk-averse software developer, 
-            has a dream about his past where he faces a pivotal choice between taking a safe promotion at his corporate job or pursuing his uncertain start-up dream, 
-            only to realize that the true value lies not in immediate success but in taking the leap despite his fear of failure.
-        </p>
     </div>
 </div>
 
