@@ -12,6 +12,28 @@
 body,h1 {font-family: "Montserrat", sans-serif}
 img {margin-bottom: -7px}
 .w3-row-padding img {margin-bottom: 12px}
+@media screen and (max-width: 768px) {
+    .w3-container {
+        padding: 16px;
+    }
+    .w3-padding {
+        padding: 16px;
+    }
+    embed {
+        height: 300px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+}
+
+.w3-text-dark {
+    color: #333;
+}
+.w3-card-4 {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 </style>
 <body>
 
@@ -23,6 +45,7 @@ img {margin-bottom: -7px}
   <div class="w3-bar-block w3-center">
     <a href="video.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Video</a>
     <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Photo</a>
+    <a href="publications.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Papers</a>
     <a href="about.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Contact</a>
   </div>
@@ -41,20 +64,23 @@ img {margin-bottom: -7px}
 </header>
 </div><br>
 
-<div class="w3-container w3-padding-64 w3-center">
-    <div class="w3-padding w3-round">
-        <h2>GPU sorting</h2>
-        <embed src="/pdf/Comparative_of_state_of_the_art_GPU_sorting_algorithms_anonymous.pdf" width="900" height="900" 
-        type="application/pdf" style="margin-bottom: 50px;">
+<div class="w3-container w3-padding-32 w3-center">
+    <!-- Section for GPU Sorting -->
+    <div class="w3-padding w3-round w3-card-4 w3-margin-bottom">
+        <h2 class="w3-text-dark">GPU Sorting</h2>
+        <embed src="/pdf/Comparative_of_state_of_the_art_GPU_sorting_algorithms_anonymous.pdf" 
+        type="application/pdf" 
+        style="width: 100%; height: 500px; margin-bottom: 30px; border-radius: 8px;">
     </div>
 
-    <div class="w3-padding w3-round">
-        <h2>Unreal Engine vs. Unity</h2>
-        <embed src="/pdf/Exploring_Multimedia_in_Unreal_Engine_anonymous.pdf" width="900" height="900" 
-        type="application/pdf" style="margin-bottom: 50px;">
+    <!-- Section for Unreal Engine vs Unity -->
+    <div class="w3-padding w3-round w3-card-4">
+        <h2 class="w3-text-dark">Unreal Engine vs. Unity</h2>
+        <embed src="/pdf/Exploring_Multimedia_in_Unreal_Engine_anonymous.pdf" 
+        type="application/pdf" 
+        style="width: 100%; height: 500px; margin-bottom: 30px; border-radius: 8px;">
     </div>
-</div>
-    
+</div>   
 
 <!-- End Page Content -->
 </div>
