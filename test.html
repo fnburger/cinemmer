@@ -345,6 +345,15 @@
       font-size: 14px;
       z-index: 0;
     }
+
+    .terminal-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        animation: scroll 20s linear infinite;
+        white-space: pre; /* Ensures newline characters create line breaks */
+      }
   </style>
 </head>
 <body>
@@ -656,6 +665,30 @@
     
     // Start animation
     animate();
+
+    // Command line functionality
+    const commandInput = document.querySelector('.command-input');
+    const terminalContent = document.querySelector('.terminal-content');
+
+    commandInput.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        const command = this.value.trim();
+        if (command !== '') { // Only proceed if the input is not empty
+        addToTerminal('NERV> ' + command);
+        this.value = ''; // Clear the input field
+        }
+    }
+    });
+
+    function addToTerminal(newLine) {
+    const currentText = terminalContent.textContent;
+    const lines = currentText.split('\n');
+    if (lines.length >= 20) {
+        lines.shift(); // Remove the oldest line if 20 or more lines exist
+    }
+    lines.push(newLine); // Add the new command
+    terminalContent.textContent = lines.join('\n'); // Update the terminal display
+    }
   </script>
 </body>
 </html>
